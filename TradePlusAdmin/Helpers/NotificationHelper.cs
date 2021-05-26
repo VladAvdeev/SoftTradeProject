@@ -8,6 +8,7 @@ using System.Windows;
 
 namespace TradePlusAdmin.Helpers
 {
+    // класс для отправки уведомлений
     public class NotificationHelper
     {
         public static NotificationHelper Instance { get; set; } = new NotificationHelper();

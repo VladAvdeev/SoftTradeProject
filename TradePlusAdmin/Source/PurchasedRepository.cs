@@ -24,13 +24,7 @@ namespace TradePlusAdmin.Source
                 return products;
             }
         }
-        //public Purchased_Box FindById(int id)
-        //{
-        //    using (SoftTradePlusEntities softDb = new SoftTradePlusEntities())
-        //    {
-        //        return softDb.Purchased_Box.Where(x => x.Order_Id == id).FirstOrDefault();
-        //    }
-        //}
+       
         public ResponseServer Add(Purchased_Box product)
         {
             using (SoftTradePlusEntities softDb = new SoftTradePlusEntities())

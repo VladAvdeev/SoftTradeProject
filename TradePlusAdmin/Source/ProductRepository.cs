@@ -23,13 +23,7 @@ namespace TradePlusAdmin.Source
                 return products;
             }
         }
-        //public Product FindById(int id)
-        //{
-        //    using (SoftTradePlusEntities softDb = new SoftTradePlusEntities())
-        //    {
-        //        return softDb.Products.Where(x => x.Id == id).FirstOrDefault();
-        //    }
-        //}
+       
         public ResponseServer Add(Product product)
         {
             using (SoftTradePlusEntities softDb = new SoftTradePlusEntities())

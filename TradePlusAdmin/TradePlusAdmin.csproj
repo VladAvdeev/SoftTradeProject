@@ -88,9 +88,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Services\DiConfigModule.cs" />
-    <Compile Include="Services\IWindowService.cs" />
-    <Compile Include="Services\NinjectDI.cs" />
     <Compile Include="Source\ClientRepository.cs" />
     <Compile Include="Source\DataBase\Client.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
@@ -133,7 +130,6 @@
     <Compile Include="Source\ProductRepository.cs" />
     <Compile Include="Source\PurchasedRepository.cs" />
     <Compile Include="ViewModels\ClientViewModel.cs" />
-    <Compile Include="ViewModels\IPageViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\ManagerViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />

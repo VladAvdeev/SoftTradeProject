@@ -8,17 +8,11 @@ using System.Threading.Tasks;
 
 namespace TradePlusAdmin.Core
 {
+    // класс для смены свойств
     public class NotifyPropertyChanged : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void RaisePropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
 
         protected void SetProperty<T>(ref T fieald, T value, [CallerMemberName] string propertyName = "")
         {

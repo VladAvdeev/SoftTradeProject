@@ -53,13 +53,6 @@
                                  VerticalContentAlignment="Center" 
                                  Height="28" Margin="0 0 10 0" />
 
-                    <!--<ComboBox Grid.Row="2" Grid.Column="1"
-                                      ItemsSource="{Binding ManagerId, Mode=OneWay}"
-                                      SelectedItem="{Binding SelectedManager}"
-                                      DisplayMemberPath="Manager" SelectedValuePath="Id" Height="25" Width="180"
-                                  Margin="0 10 10 0"
-                                      />-->
-
                     <TextBlock Margin="10" Grid.Row="2" Grid.Column="0" Text="Менеджер:" FontSize="12" HorizontalAlignment="Left"/>
                         <TextBox x:Name="tbxManager_Id" Grid.Row="2" Grid.Column="1" 
                                  Text="{Binding ManagerId, UpdateSourceTrigger=PropertyChanged}"

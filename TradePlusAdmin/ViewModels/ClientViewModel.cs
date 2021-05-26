@@ -10,17 +10,10 @@ using TradePlusAdmin.Source.DataBase;
 
 namespace TradePlusAdmin.ViewModels
 {
-    public class ClientViewModel : NotifyPropertyChanged, IPageViewModel
+    public class ClientViewModel : NotifyPropertyChanged
     {
         private readonly ClientRepository clientRepository = new ClientRepository();
-        //private readonly ManagerRepository managerRepository = new ManagerRepository();
-
-        //private ObservableCollection<Manager> managers;
-        //public ObservableCollection<Manager> Managers
-        //{
-        //    get => managers;
-        //    set => SetProperty(ref managers, value);
-        //}
+       
         private ObservableCollection<Client> clients;
         public ObservableCollection<Client> Clients
         {
@@ -39,7 +32,7 @@ namespace TradePlusAdmin.ViewModels
                 ManagerId = SelectedClient?.Manager_Id;
                 ClientStatus = SelectedClient?.Client_Status;
                 ClientType = SelectedClient?.Client_Type;
-                //SelectedPurchased_Box = selectedClient?.Purchased_Box.Where(x => x.Client_Id == selectedClient.Id).FirstOrDefault();
+               
                 SelectedManager = SelectedClient?.Manager;
 
 
@@ -107,7 +100,6 @@ namespace TradePlusAdmin.ViewModels
         {
             Clients = new ObservableCollection<Client>(clientRepository.FindAll());
            
-            //Managers = new ObservableCollection<Manager>(managerRepository.FindAll());
         }
         private void Add()
         {

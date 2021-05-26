@@ -13,7 +13,7 @@ using TradePlusAdmin.Source.DataBase;
 
 namespace TradePlusAdmin.ViewModels
 {
-    public class ManagerViewModel : NotifyPropertyChanged, IPageViewModel
+    public class ManagerViewModel : NotifyPropertyChanged
     {
         private readonly ManagerRepository managerRepository = new ManagerRepository();
         private ObservableCollection<Manager> managers;
